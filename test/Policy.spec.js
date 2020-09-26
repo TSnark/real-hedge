@@ -101,7 +101,7 @@ describe("Policy", function () {
   it("Price producer callback results in payout when price below strike price", async function () {
     const priceRequestId = utils.formatBytes32String("hello");
     await mockPriceProducer.mock.requestPrice.returns(priceRequestId);
-    await mockTreasury.mock.payout.returns();
+    await mockTreasury.mock.payoutEarmarked.returns();
     const expiry = (await getCurrentTimeStamp()) + 10000; //Make sure policy is not elapsed
     const policyData = createPolicyData(expiry);
 
@@ -117,8 +117,8 @@ describe("Policy", function () {
       policyData.strikePrice - 1
     );
 
-    expect("payout").to.be.calledOnContractWith(mockTreasury, [
-      policyData.coverAmountInWei,
+    expect("payoutEarmarked").to.be.calledOnContractWith(mockTreasury, [
+      policyData.coverAmount,
       userWallet.address,
     ]);
 
@@ -173,7 +173,7 @@ describe("Policy", function () {
 
 function createPolicyData(expiry = 10000) {
   return {
-    coverAmountInWei: 1000,
+    coverAmount: 1000,
     end: expiry,
     externalCode: "A12",
     strikePrice: 100000,

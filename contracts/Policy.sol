@@ -64,9 +64,15 @@ contract Policy is Ownable, ERC721, IPriceConsumer, IPolicy {
         uint256 policyId = _pendingRequests[requestId];
         PolicyData storage policy = policies[policyId];
         if (policy.active && currentPrice < policy.strikePrice) {
-            _treasury.payout(policy.coverAmountInWei, ownerOf(policyId));
+            _treasury.payoutEarmarked(policy.coverAmount, ownerOf(policyId));
             _burnPolicy(policyId);
         }
+    }
+
+    function burnExpiredPolicy(uint256 policyId) external {
+        PolicyData storage policy = policies[policyId];
+        _treasury.releaseFunds(policy.coverAmount);
+        _burnPolicy(policyId);
     }
 
     function _burnPolicy(uint256 policyId) private {

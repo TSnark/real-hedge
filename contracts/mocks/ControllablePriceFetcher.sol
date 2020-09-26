@@ -28,4 +28,8 @@ contract ControllablePriceFetcher is IPriceProducer {
         );
         delete _pendingRequestConsumers[requestId];
     }
+
+    function addUser(address newUser) external {}
+
+    function removeUser(address user) external {}
 }
