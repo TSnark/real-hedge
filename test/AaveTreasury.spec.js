@@ -6,14 +6,20 @@ const {
   solidity,
   deployContract,
 } = require("ethereum-waffle");
-const Treasury = require("../build/Treasury.json");
+const Treasury = require("../build/AaveTreasury.json");
 const MockDAI = require("../build/MockDAI.json");
+const IAave = require("../build/IAave.json");
+const IAaveToken = require("../build/IAaveToken.json");
+const ILendingPoolAddressesProvider = require("../build/ILendingPoolAddressesProvider.json");
 
 use(solidity);
 
-describe("Treasury", function () {
+describe("AaveTreasury", function () {
   let contract;
   let mockDai;
+  let mockAave;
+  let mockAaveToken;
+  let mockAddressProvider;
 
   const provider = new MockProvider();
   const [deployerWallet, treasurerWallet, otherWallet] = provider.getWallets();
@@ -24,9 +30,22 @@ describe("Treasury", function () {
 
   beforeEach(async () => {
     mockDai = await deployContract(deployerWallet, MockDAI);
+    mockAave = await deployMockContract(deployerWallet, IAave.abi);
+    mockAaveToken = await deployMockContract(deployerWallet, IAaveToken.abi);
+    mockAddressProvider = await deployMockContract(
+      deployerWallet,
+      ILendingPoolAddressesProvider.abi
+    );
     contract = await deployContract(deployerWallet, Treasury, [
       mockDai.address,
+      mockAaveToken.address,
+      mockAddressProvider.address,
     ]);
+
+    await mockAave.mock.deposit.returns();
+    await mockAddressProvider.mock.getLendingPool.returns(mockAave.address);
+    await mockAddressProvider.mock.getLendingPoolCore.returns(mockAave.address); //Any address is ok
+    await mockAaveToken.mock.balanceOf.returns(utils.parseEther("0"));
 
     await contract.addTreasurer(treasurerWallet.address);
   });
@@ -190,4 +209,80 @@ describe("Treasury", function () {
       contract.payout(utils.parseEther("1"), treasurerWallet.address)
     ).to.be.revertedWith("Access Denied");
   });
+
+  //Aave Tests
+  it("Deposit transfer 90 amount to Aave when total balance is 0", async function () {
+    expect(await mockDai.balanceOf(contract.address)).to.equal(0);
+    const amount = utils.parseEther("10000");
+    await mockDai.approve(contract.address, amount);
+    await contract.deposit(amount, deployerWallet.address);
+    expect(await mockDai.balanceOf(contract.address)).to.equal(
+      utils.parseEther("1000")
+    );
+    expect("deposit").to.be.calledOnContractWith(mockAave, [
+      mockDai.address,
+      utils.parseEther("9000"),
+      0,
+    ]);
+  });
+
+  it("Deposit transfers 90% amount to Aave when total balance is 0", async function () {
+    expect(await mockDai.balanceOf(contract.address)).to.equal(0);
+    const amount = utils.parseEther("10000");
+    await mockDai.approve(contract.address, amount);
+    await contract.deposit(amount, deployerWallet.address);
+    expect(await mockDai.balanceOf(contract.address)).to.equal(
+      utils.parseEther("1000")
+    );
+    expect("deposit").to.be.calledOnContractWith(mockAave, [
+      mockDai.address,
+      utils.parseEther("9000"),
+      0,
+    ]);
+  });
+
+  it("Deposit transfers 90% amount to Aave when investment under target", async function () {
+    await setContractBalance("100000");
+    const amount = utils.parseEther("10000");
+    await mockDai.approve(contract.address, amount);
+    await contract.deposit(amount, deployerWallet.address);
+    expect(await mockDai.balanceOf(contract.address)).to.equal(
+      utils.parseEther("101000") //Balance + new amount
+    );
+    expect("deposit").to.be.calledOnContractWith(mockAave, [
+      mockDai.address,
+      utils.parseEther("9000"),
+      0,
+    ]);
+  });
+
+  it("Deposit transfers 100% amount to reserves when investment above target", async function () {
+    await setContractBalance("1000");
+    await mockAaveToken.mock.balanceOf.returns(utils.parseEther("100000"));
+    const amount = utils.parseEther("10000");
+    await mockDai.approve(contract.address, amount);
+    await contract.deposit(amount, deployerWallet.address);
+    expect(await mockDai.balanceOf(contract.address)).to.equal(
+      utils.parseEther("11000") //Balance + new amount
+    );
+  });
+
+  // TODO Conver mock aave token to real contract
+  //it("Payout divests when reserves not enough", async function () {
+  //   const payoutAmount = utils.parseEther("10000");
+  //   await setContractBalance("1000");
+  //   await mockAaveToken.mock.balanceOf.returns(utils.parseEther("100000"));
+  //   await mockAaveToken.mock.redeem.returns();
+
+  //   const contractCalledByTreasurer = contract.connect(treasurerWallet);
+
+  //   await contractCalledByTreasurer.payout(payoutAmount, otherWallet.address);
+
+  //   expect(await mockDai.balanceOf(otherWallet.address)).to.equal(payoutAmount);
+  //   expect("redeem").to.be.calledOnContractWith(mockAaveToken, [
+  //     mockDai.address,
+  //     amount,
+  //     0,
+  //   ]);
+  // });
 });

@@ -22,13 +22,14 @@ contract RDAI is ERC20Burnable {
     {
         _treasury = treasury;
         _dai = dai;
+        _dai.safeApprove(address(_treasury), uint256(-1));
     }
 
     function deposit(uint256 amount) external {
         require(amount > 0, "Deposit must be greater than 0");
         uint256 value = _treasury.totalBalance();
 
-        _dai.safeTransferFrom(msg.sender, address(_treasury), amount);
+        _treasury.deposit(amount, msg.sender);
 
         uint256 shares = 0;
         if (value == 0 || shares == 0) {

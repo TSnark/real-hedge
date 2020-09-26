@@ -14,7 +14,7 @@ contract Treasury is AccessControl, ITreasury {
 
     bytes32 public constant TREASURER_ROLE = keccak256("TREASURER_ROLE");
     uint256 public totalEarmarkedFunds;
-    IERC20 private _dai;
+    IERC20 internal _dai;
 
     constructor(IERC20 dai) public {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
@@ -23,8 +23,8 @@ contract Treasury is AccessControl, ITreasury {
 
     receive() external payable {}
 
-    function depositPremium(uint256 premium) external override {
-        _dai.safeTransferFrom(msg.sender, address(this), premium);
+    function deposit(uint256 premium, address payee) external virtual override {
+        _dai.safeTransferFrom(payee, address(this), premium);
     }
 
     function isCapitalAvailable(uint256 amount)
@@ -33,10 +33,10 @@ contract Treasury is AccessControl, ITreasury {
         view
         returns (bool)
     {
-        return _dai.balanceOf(address(this)) >= totalEarmarkedFunds.add(amount);
+        return totalBalance() >= totalEarmarkedFunds.add(amount);
     }
 
-    function totalBalance() public override view returns (uint256) {
+    function totalBalance() public virtual override view returns (uint256) {
         return _dai.balanceOf(address(this));
     }
 
@@ -57,7 +57,7 @@ contract Treasury is AccessControl, ITreasury {
         _payout(amount, payee);
     }
 
-    function _payout(uint256 amount, address payee) private {
+    function _payout(uint256 amount, address payee) internal virtual {
         require(this.isCapitalAvailable(amount), "Insufficient Funds");
         _dai.safeTransfer(payee, amount);
     }

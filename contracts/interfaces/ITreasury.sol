@@ -14,7 +14,7 @@ interface ITreasury {
 
     function payoutEarmarked(uint256 amount, address payee) external;
 
-    function depositPremium(uint256 premium) external;
+    function deposit(uint256 premium, address payee) external;
 
     function addTreasurer(address newTreasurer) external;
 

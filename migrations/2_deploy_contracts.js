@@ -4,6 +4,7 @@ var ControllablePriceFetcher = artifacts.require(
 var PriceFetcher = artifacts.require("./PriceFetcher.sol");
 var DateHelper = artifacts.require("./DateHelper.sol");
 var Treasury = artifacts.require("./Treasury.sol");
+var AaveTreasury = artifacts.require("./AaveTreasury.sol");
 var Policy = artifacts.require("./Policy.sol");
 var Underwriter = artifacts.require("./Underwriter.sol");
 var MockDai = artifacts.require("./mocks/MockDAI.sol");
@@ -16,6 +17,7 @@ module.exports = async function (deployer, network) {
   network = network.replace("-fork", "");
   let daiAddress;
   let priceFetcher;
+  let treasury;
   if (network === "local") {
     let mockDai = await deployer.deploy(MockDai);
     daiAddress = mockDai.address;
@@ -23,6 +25,7 @@ module.exports = async function (deployer, network) {
       ControllablePriceFetcher
     );
     priceFetcher = controllablePriceFetcher;
+    treasury = await deployer.deploy(Treasury, daiAddress);
   } else {
     daiAddress = constants[network].dai;
     dateHelper = await deployer.deploy(DateHelper);
@@ -35,9 +38,14 @@ module.exports = async function (deployer, network) {
       dateHelper.address
     );
     priceFetcher = chainlinkPriceFetcher;
+    treasury = await deployer.deploy(
+      AaveTreasury,
+      daiAddress,
+      constants[network].aaveToken,
+      constants[network].aaveAddressesProvider
+    );
   }
 
-  const treasury = await deployer.deploy(Treasury, daiAddress);
   const rDai = await deployer.deploy(RDai, daiAddress, treasury.address);
   const policy = await deployer.deploy(
     Policy,
