@@ -1,0 +1,79 @@
+import React, {Fragment} from "react";
+import styled from "styled-components";
+import {locations} from "./locations";
+import {Box, Spacer, Surface} from "react-neu";
+const Autocomplete = require("react-autocomplete") as any;
+
+export interface InputProps {
+  endAdornment?: React.ReactNode;
+  onChange?: (e: React.FormEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  size?: "sm" | "md" | "lg";
+  startAdornment?: React.ReactNode;
+  value?: string;
+}
+
+const LocationAutoComplete: React.FC<InputProps> = ({
+  endAdornment,
+  onChange,
+  placeholder,
+  size,
+  startAdornment,
+  value,
+}) => {
+  let height = 56;
+  if (size === "sm") {
+    height = 44;
+  } else if (size === "lg") {
+    height = 72;
+  }
+
+  return (
+    <Surface elevation="N2">
+      <Box alignItems="center" height={height} paddingHorizontal={3} row>
+        {!!startAdornment && (
+          <Fragment>
+            {startAdornment}
+            <Spacer size="sm" />
+          </Fragment>
+        )}
+        <Autocomplete
+          getItemValue={(item: any) => item.value}
+          items={locations}
+          renderItem={(item: any, isHighlighted: any) => (
+            <div style={{background: isHighlighted ? "lightgray" : "white"}}>
+              {item.label}
+            </div>
+          )}
+          value={value}
+          onChange={(e: any) => (value = e.target.value)}
+          onSelect={(val: any) => (value = val)}
+        />
+        {!!endAdornment && (
+          <Fragment>
+            <Spacer size="sm" />
+            {endAdornment}
+          </Fragment>
+        )}
+      </Box>
+    </Surface>
+  );
+};
+
+interface StyledInputProps {
+  height: number;
+}
+
+const StyledInput = styled.input<StyledInputProps>`
+  background: none;
+  border: 0;
+  color: ${(props) => props.theme.textColor};
+  font-size: 18px;
+  flex: 1;
+  height: ${(props) => props.height}px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+`;
+
+export default LocationAutoComplete;
