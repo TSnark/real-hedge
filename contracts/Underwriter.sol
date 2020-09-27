@@ -136,7 +136,8 @@ contract Underwriter is Ownable, IPriceConsumer {
                     end: block.timestamp + pendingPolicy.durationInS,
                     externalCode: pendingPolicy.externalCode,
                     strikePrice: strikePrice,
-                    active: true
+                    active: true,
+                    policyId: uint256(-1) //Uninitialised id
                 });
 
                 uint256 policyId = _policy.mintPolicy(

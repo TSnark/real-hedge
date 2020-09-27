@@ -40,6 +40,7 @@ contract Policy is Ownable, ERC721, IPriceConsumer, IPolicy {
         tokenId = _tokenIdTracker.current();
         _mint(to, tokenId);
         _tokenIdTracker.increment();
+        data.policyId = tokenId;
         policies[tokenId] = data;
         return tokenId;
     }

@@ -4,6 +4,7 @@ pragma experimental ABIEncoderV2;
 
 interface IPolicy {
     struct PolicyData {
+        uint256 policyId;
         uint256 coverAmount;
         uint256 end;
         string externalCode;
