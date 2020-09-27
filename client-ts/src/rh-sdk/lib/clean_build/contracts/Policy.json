@@ -700,7 +700,7 @@
         "id": 813,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 6787,
+        "sourceUnit": 6783,
         "src": "99:57:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -711,7 +711,7 @@
         "id": 814,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 4737,
+        "sourceUnit": 4733,
         "src": "157:52:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -722,7 +722,7 @@
         "id": 815,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 7224,
+        "sourceUnit": 7220,
         "src": "210:52:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -733,7 +733,7 @@
         "id": 816,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2263,
+        "sourceUnit": 2259,
         "src": "263:41:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -744,7 +744,7 @@
         "id": 817,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2274,
+        "sourceUnit": 2270,
         "src": "305:41:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -755,7 +755,7 @@
         "id": 818,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2330,
+        "sourceUnit": 2326,
         "src": "347:36:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -766,7 +766,7 @@
         "id": 819,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2241,
+        "sourceUnit": 2237,
         "src": "384:34:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -781,10 +781,10 @@
               "id": 820,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4736,
+              "referencedDeclaration": 4732,
               "src": "439:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$4736",
+                "typeIdentifier": "t_contract$_Ownable_$4732",
                 "typeString": "contract Ownable"
               }
             },
@@ -799,10 +799,10 @@
               "id": 822,
               "name": "ERC721",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6786,
+              "referencedDeclaration": 6782,
               "src": "448:6:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC721_$6786",
+                "typeIdentifier": "t_contract$_ERC721_$6782",
                 "typeString": "contract ERC721"
               }
             },
@@ -817,10 +817,10 @@
               "id": 824,
               "name": "IPriceConsumer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2262,
+              "referencedDeclaration": 2258,
               "src": "456:14:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IPriceConsumer_$2262",
+                "typeIdentifier": "t_contract$_IPriceConsumer_$2258",
                 "typeString": "contract IPriceConsumer"
               }
             },
@@ -835,10 +835,10 @@
               "id": 826,
               "name": "IPolicy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2240,
+              "referencedDeclaration": 2236,
               "src": "472:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IPolicy_$2240",
+                "typeIdentifier": "t_contract$_IPolicy_$2236",
                 "typeString": "contract IPolicy"
               }
             },
@@ -848,16 +848,16 @@
           }
         ],
         "contractDependencies": [
-          2240,
-          2262,
-          4344,
-          4736,
-          4793,
-          4805,
-          6786,
-          6902,
-          6933,
-          6960
+          2236,
+          2258,
+          4340,
+          4732,
+          4789,
+          4801,
+          6782,
+          6898,
+          6929,
+          6956
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -865,16 +865,16 @@
         "id": 1070,
         "linearizedBaseContracts": [
           1070,
-          2240,
-          2262,
-          6786,
-          6933,
-          6960,
-          6902,
-          4793,
-          4805,
-          4736,
-          4344
+          2236,
+          2258,
+          6782,
+          6929,
+          6956,
+          6898,
+          4789,
+          4801,
+          4732,
+          4340
         ],
         "name": "Policy",
         "nodeType": "ContractDefinition",
@@ -886,10 +886,10 @@
               "id": 828,
               "name": "Counters",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7223,
+              "referencedDeclaration": 7219,
               "src": "492:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Counters_$7223",
+                "typeIdentifier": "t_contract$_Counters_$7219",
                 "typeString": "library Counters"
               }
             },
@@ -900,10 +900,10 @@
               "id": 829,
               "name": "Counters.Counter",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7183,
+              "referencedDeclaration": 7179,
               "src": "505:16:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$7183_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$7179_storage_ptr",
                 "typeString": "struct Counters.Counter"
               }
             }
@@ -1023,7 +1023,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Counter_$7183_storage",
+              "typeIdentifier": "t_struct$_Counter_$7179_storage",
               "typeString": "struct Counters.Counter"
             },
             "typeName": {
@@ -1031,10 +1031,10 @@
               "id": 839,
               "name": "Counters.Counter",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7183,
+              "referencedDeclaration": 7179,
               "src": "610:16:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$7183_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$7179_storage_ptr",
                 "typeString": "struct Counters.Counter"
               }
             },
@@ -1053,7 +1053,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ITreasury_$2329",
+              "typeIdentifier": "t_contract$_ITreasury_$2325",
               "typeString": "contract ITreasury"
             },
             "typeName": {
@@ -1061,10 +1061,10 @@
               "id": 841,
               "name": "ITreasury",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2329,
+              "referencedDeclaration": 2325,
               "src": "657:9:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ITreasury_$2329",
+                "typeIdentifier": "t_contract$_ITreasury_$2325",
                 "typeString": "contract ITreasury"
               }
             },
@@ -1083,7 +1083,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+              "typeIdentifier": "t_contract$_IPriceProducer_$2269",
               "typeString": "contract IPriceProducer"
             },
             "typeName": {
@@ -1091,10 +1091,10 @@
               "id": 843,
               "name": "IPriceProducer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2273,
+              "referencedDeclaration": 2269,
               "src": "690:14:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                 "typeString": "contract IPriceProducer"
               }
             },
@@ -1114,7 +1114,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
               "typeString": "mapping(uint256 => struct IPolicy.PolicyData)"
             },
             "typeName": {
@@ -1132,7 +1132,7 @@
               "nodeType": "Mapping",
               "src": "733:30:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                 "typeString": "mapping(uint256 => struct IPolicy.PolicyData)"
               },
               "valueType": {
@@ -1140,10 +1140,10 @@
                 "id": 846,
                 "name": "PolicyData",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 2230,
+                "referencedDeclaration": 2226,
                 "src": "752:10:3",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                  "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                   "typeString": "struct IPolicy.PolicyData"
                 }
               }
@@ -1221,7 +1221,7 @@
                       "referencedDeclaration": 842,
                       "src": "968:9:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITreasury_$2329",
+                        "typeIdentifier": "t_contract$_ITreasury_$2325",
                         "typeString": "contract ITreasury"
                       }
                     },
@@ -1236,13 +1236,13 @@
                       "referencedDeclaration": 854,
                       "src": "980:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITreasury_$2329",
+                        "typeIdentifier": "t_contract$_ITreasury_$2325",
                         "typeString": "contract ITreasury"
                       }
                     },
                     "src": "968:20:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITreasury_$2329",
+                      "typeIdentifier": "t_contract$_ITreasury_$2325",
                       "typeString": "contract ITreasury"
                     }
                   },
@@ -1267,7 +1267,7 @@
                       "referencedDeclaration": 844,
                       "src": "998:13:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                        "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                         "typeString": "contract IPriceProducer"
                       }
                     },
@@ -1282,13 +1282,13 @@
                       "referencedDeclaration": 856,
                       "src": "1014:12:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                        "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                         "typeString": "contract IPriceProducer"
                       }
                     },
                     "src": "998:28:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                      "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                       "typeString": "contract IPriceProducer"
                     }
                   },
@@ -1349,10 +1349,10 @@
                   "name": "ERC721",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 6786,
+                  "referencedDeclaration": 6782,
                   "src": "928:6:3",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ERC721_$6786_$",
+                    "typeIdentifier": "t_type$_t_contract$_ERC721_$6782_$",
                     "typeString": "type(contract ERC721)"
                   }
                 },
@@ -1379,7 +1379,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITreasury_$2329",
+                    "typeIdentifier": "t_contract$_ITreasury_$2325",
                     "typeString": "contract ITreasury"
                   },
                   "typeName": {
@@ -1387,10 +1387,10 @@
                     "id": 853,
                     "name": "ITreasury",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2329,
+                    "referencedDeclaration": 2325,
                     "src": "856:9:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITreasury_$2329",
+                      "typeIdentifier": "t_contract$_ITreasury_$2325",
                       "typeString": "contract ITreasury"
                     }
                   },
@@ -1409,7 +1409,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                    "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                     "typeString": "contract IPriceProducer"
                   },
                   "typeName": {
@@ -1417,10 +1417,10 @@
                     "id": 855,
                     "name": "IPriceProducer",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2273,
+                    "referencedDeclaration": 2269,
                     "src": "876:14:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                      "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                       "typeString": "contract IPriceProducer"
                     }
                   },
@@ -1444,7 +1444,7 @@
           },
           {
             "baseFunctions": [
-              2239
+              2235
             ],
             "body": {
               "id": 914,
@@ -1488,7 +1488,7 @@
                           "referencedDeclaration": 840,
                           "src": "1350:15:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Counter_$7183_storage",
+                            "typeIdentifier": "t_struct$_Counter_$7179_storage",
                             "typeString": "struct Counters.Counter storage ref"
                           }
                         },
@@ -1499,10 +1499,10 @@
                         "lValueRequested": false,
                         "memberName": "current",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7194,
+                        "referencedDeclaration": 7190,
                         "src": "1350:23:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$7183_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$7183_storage_ptr_$",
+                          "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$7179_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$7179_storage_ptr_$",
                           "typeString": "function (struct Counters.Counter storage pointer) view returns (uint256)"
                         }
                       },
@@ -1577,7 +1577,7 @@
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6522,
+                      "referencedDeclaration": 6518,
                       "src": "1385:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -1618,7 +1618,7 @@
                         "referencedDeclaration": 840,
                         "src": "1413:15:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Counter_$7183_storage",
+                          "typeIdentifier": "t_struct$_Counter_$7179_storage",
                           "typeString": "struct Counters.Counter storage ref"
                         }
                       },
@@ -1629,10 +1629,10 @@
                       "lValueRequested": false,
                       "memberName": "increment",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7206,
+                      "referencedDeclaration": 7202,
                       "src": "1413:25:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$7183_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$7183_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$7179_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$7179_storage_ptr_$",
                         "typeString": "function (struct Counters.Counter storage pointer)"
                       }
                     },
@@ -1674,7 +1674,7 @@
                         "referencedDeclaration": 876,
                         "src": "1450:4:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_memory_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_memory_ptr",
                           "typeString": "struct IPolicy.PolicyData memory"
                         }
                       },
@@ -1685,7 +1685,7 @@
                       "lValueRequested": true,
                       "memberName": "policyId",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2219,
+                      "referencedDeclaration": 2215,
                       "src": "1450:13:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1736,7 +1736,7 @@
                         "referencedDeclaration": 848,
                         "src": "1483:8:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                           "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                         }
                       },
@@ -1761,7 +1761,7 @@
                       "nodeType": "IndexAccess",
                       "src": "1483:17:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                         "typeString": "struct IPolicy.PolicyData storage ref"
                       }
                     },
@@ -1776,13 +1776,13 @@
                       "referencedDeclaration": 876,
                       "src": "1503:4:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_memory_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_memory_ptr",
                         "typeString": "struct IPolicy.PolicyData memory"
                       }
                     },
                     "src": "1483:24:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -1826,7 +1826,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 4685,
+                  "referencedDeclaration": 4681,
                   "src": "1135:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1890,7 +1890,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_PolicyData_$2230_memory_ptr",
+                    "typeIdentifier": "t_struct$_PolicyData_$2226_memory_ptr",
                     "typeString": "struct IPolicy.PolicyData"
                   },
                   "typeName": {
@@ -1898,10 +1898,10 @@
                     "id": 875,
                     "name": "PolicyData",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2230,
+                    "referencedDeclaration": 2226,
                     "src": "1071:10:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                       "typeString": "struct IPolicy.PolicyData"
                     }
                   },
@@ -1975,7 +1975,7 @@
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                         "typeString": "struct IPolicy.PolicyData"
                       },
                       "typeName": {
@@ -1983,10 +1983,10 @@
                         "id": 920,
                         "name": "PolicyData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2230,
+                        "referencedDeclaration": 2226,
                         "src": "1594:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData"
                         }
                       },
@@ -2006,7 +2006,7 @@
                       "referencedDeclaration": 848,
                       "src": "1622:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                         "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                       }
                     },
@@ -2031,7 +2031,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1622:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -2053,7 +2053,7 @@
                           "referencedDeclaration": 921,
                           "src": "1658:6:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                            "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                             "typeString": "struct IPolicy.PolicyData storage pointer"
                           }
                         },
@@ -2064,7 +2064,7 @@
                         "lValueRequested": false,
                         "memberName": "active",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2229,
+                        "referencedDeclaration": 2225,
                         "src": "1658:13:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -2157,7 +2157,7 @@
                         "referencedDeclaration": 921,
                         "src": "1715:6:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData storage pointer"
                         }
                       },
@@ -2168,7 +2168,7 @@
                       "lValueRequested": false,
                       "memberName": "end",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2223,
+                      "referencedDeclaration": 2219,
                       "src": "1715:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2266,7 +2266,7 @@
                                 "referencedDeclaration": 921,
                                 "src": "1858:6:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                                  "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                                   "typeString": "struct IPolicy.PolicyData storage pointer"
                                 }
                               },
@@ -2277,7 +2277,7 @@
                               "lValueRequested": false,
                               "memberName": "externalCode",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2225,
+                              "referencedDeclaration": 2221,
                               "src": "1858:19:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_storage",
@@ -2301,7 +2301,7 @@
                               "referencedDeclaration": 844,
                               "src": "1831:13:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                                 "typeString": "contract IPriceProducer"
                               }
                             },
@@ -2312,7 +2312,7 @@
                             "lValueRequested": false,
                             "memberName": "requestPrice",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2272,
+                            "referencedDeclaration": 2268,
                             "src": "1831:26:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_bytes32_$",
@@ -2538,7 +2538,7 @@
           },
           {
             "baseFunctions": [
-              2261
+              2257
             ],
             "body": {
               "id": 1030,
@@ -2603,7 +2603,7 @@
                               "referencedDeclaration": 844,
                               "src": "2095:13:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                                 "typeString": "contract IPriceProducer"
                               }
                             }
@@ -2611,7 +2611,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                                 "typeString": "contract IPriceProducer"
                               }
                             ],
@@ -2816,7 +2816,7 @@
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                         "typeString": "struct IPolicy.PolicyData"
                       },
                       "typeName": {
@@ -2824,10 +2824,10 @@
                         "id": 984,
                         "name": "PolicyData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2230,
+                        "referencedDeclaration": 2226,
                         "src": "2193:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData"
                         }
                       },
@@ -2847,7 +2847,7 @@
                       "referencedDeclaration": 848,
                       "src": "2221:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                         "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                       }
                     },
@@ -2872,7 +2872,7 @@
                     "nodeType": "IndexAccess",
                     "src": "2221:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -2943,7 +2943,7 @@
                       "name": "ownerOf",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6003,
+                      "referencedDeclaration": 5999,
                       "src": "2266:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_address_$",
@@ -2991,7 +2991,7 @@
                         "referencedDeclaration": 985,
                         "src": "2297:6:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData storage pointer"
                         }
                       },
@@ -3002,7 +3002,7 @@
                       "lValueRequested": false,
                       "memberName": "active",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2229,
+                      "referencedDeclaration": 2225,
                       "src": "2297:13:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -3048,7 +3048,7 @@
                           "referencedDeclaration": 985,
                           "src": "2329:6:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                            "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                             "typeString": "struct IPolicy.PolicyData storage pointer"
                           }
                         },
@@ -3059,7 +3059,7 @@
                         "lValueRequested": false,
                         "memberName": "strikePrice",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2227,
+                        "referencedDeclaration": 2223,
                         "src": "2329:18:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3202,7 +3202,7 @@
                                 "referencedDeclaration": 985,
                                 "src": "2389:6:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                                  "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                                   "typeString": "struct IPolicy.PolicyData storage pointer"
                                 }
                               },
@@ -3213,7 +3213,7 @@
                               "lValueRequested": false,
                               "memberName": "coverAmount",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2221,
+                              "referencedDeclaration": 2217,
                               "src": "2389:18:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -3254,7 +3254,7 @@
                               "referencedDeclaration": 842,
                               "src": "2363:9:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ITreasury_$2329",
+                                "typeIdentifier": "t_contract$_ITreasury_$2325",
                                 "typeString": "contract ITreasury"
                               }
                             },
@@ -3265,7 +3265,7 @@
                             "lValueRequested": false,
                             "memberName": "payoutEarmarked",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2311,
+                            "referencedDeclaration": 2307,
                             "src": "2363:25:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -3557,7 +3557,7 @@
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                         "typeString": "struct IPolicy.PolicyData"
                       },
                       "typeName": {
@@ -3565,10 +3565,10 @@
                         "id": 1036,
                         "name": "PolicyData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2230,
+                        "referencedDeclaration": 2226,
                         "src": "2668:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData"
                         }
                       },
@@ -3588,7 +3588,7 @@
                       "referencedDeclaration": 848,
                       "src": "2696:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                         "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                       }
                     },
@@ -3613,7 +3613,7 @@
                     "nodeType": "IndexAccess",
                     "src": "2696:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -3635,7 +3635,7 @@
                           "referencedDeclaration": 1037,
                           "src": "2747:6:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                            "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                             "typeString": "struct IPolicy.PolicyData storage pointer"
                           }
                         },
@@ -3646,7 +3646,7 @@
                         "lValueRequested": false,
                         "memberName": "coverAmount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2221,
+                        "referencedDeclaration": 2217,
                         "src": "2747:18:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3670,7 +3670,7 @@
                         "referencedDeclaration": 842,
                         "src": "2724:9:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITreasury_$2329",
+                          "typeIdentifier": "t_contract$_ITreasury_$2325",
                           "typeString": "contract ITreasury"
                         }
                       },
@@ -3681,7 +3681,7 @@
                       "lValueRequested": false,
                       "memberName": "releaseFunds",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2285,
+                      "referencedDeclaration": 2281,
                       "src": "2724:22:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
@@ -3855,7 +3855,7 @@
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6590,
+                      "referencedDeclaration": 6586,
                       "src": "2867:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
@@ -3904,7 +3904,7 @@
                         "referencedDeclaration": 848,
                         "src": "2899:8:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                           "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                         }
                       },
@@ -3929,7 +3929,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2899:18:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                         "typeString": "struct IPolicy.PolicyData storage ref"
                       }
                     },
@@ -4046,7 +4046,7 @@
         "id": 813,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 6787,
+        "sourceUnit": 6783,
         "src": "99:57:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4057,7 +4057,7 @@
         "id": 814,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 4737,
+        "sourceUnit": 4733,
         "src": "157:52:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4068,7 +4068,7 @@
         "id": 815,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 7224,
+        "sourceUnit": 7220,
         "src": "210:52:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4079,7 +4079,7 @@
         "id": 816,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2263,
+        "sourceUnit": 2259,
         "src": "263:41:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4090,7 +4090,7 @@
         "id": 817,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2274,
+        "sourceUnit": 2270,
         "src": "305:41:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4101,7 +4101,7 @@
         "id": 818,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2330,
+        "sourceUnit": 2326,
         "src": "347:36:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4112,7 +4112,7 @@
         "id": 819,
         "nodeType": "ImportDirective",
         "scope": 1071,
-        "sourceUnit": 2241,
+        "sourceUnit": 2237,
         "src": "384:34:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4127,10 +4127,10 @@
               "id": 820,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4736,
+              "referencedDeclaration": 4732,
               "src": "439:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$4736",
+                "typeIdentifier": "t_contract$_Ownable_$4732",
                 "typeString": "contract Ownable"
               }
             },
@@ -4145,10 +4145,10 @@
               "id": 822,
               "name": "ERC721",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6786,
+              "referencedDeclaration": 6782,
               "src": "448:6:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC721_$6786",
+                "typeIdentifier": "t_contract$_ERC721_$6782",
                 "typeString": "contract ERC721"
               }
             },
@@ -4163,10 +4163,10 @@
               "id": 824,
               "name": "IPriceConsumer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2262,
+              "referencedDeclaration": 2258,
               "src": "456:14:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IPriceConsumer_$2262",
+                "typeIdentifier": "t_contract$_IPriceConsumer_$2258",
                 "typeString": "contract IPriceConsumer"
               }
             },
@@ -4181,10 +4181,10 @@
               "id": 826,
               "name": "IPolicy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2240,
+              "referencedDeclaration": 2236,
               "src": "472:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IPolicy_$2240",
+                "typeIdentifier": "t_contract$_IPolicy_$2236",
                 "typeString": "contract IPolicy"
               }
             },
@@ -4194,16 +4194,16 @@
           }
         ],
         "contractDependencies": [
-          2240,
-          2262,
-          4344,
-          4736,
-          4793,
-          4805,
-          6786,
-          6902,
-          6933,
-          6960
+          2236,
+          2258,
+          4340,
+          4732,
+          4789,
+          4801,
+          6782,
+          6898,
+          6929,
+          6956
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -4211,16 +4211,16 @@
         "id": 1070,
         "linearizedBaseContracts": [
           1070,
-          2240,
-          2262,
-          6786,
-          6933,
-          6960,
-          6902,
-          4793,
-          4805,
-          4736,
-          4344
+          2236,
+          2258,
+          6782,
+          6929,
+          6956,
+          6898,
+          4789,
+          4801,
+          4732,
+          4340
         ],
         "name": "Policy",
         "nodeType": "ContractDefinition",
@@ -4232,10 +4232,10 @@
               "id": 828,
               "name": "Counters",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7223,
+              "referencedDeclaration": 7219,
               "src": "492:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Counters_$7223",
+                "typeIdentifier": "t_contract$_Counters_$7219",
                 "typeString": "library Counters"
               }
             },
@@ -4246,10 +4246,10 @@
               "id": 829,
               "name": "Counters.Counter",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7183,
+              "referencedDeclaration": 7179,
               "src": "505:16:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$7183_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$7179_storage_ptr",
                 "typeString": "struct Counters.Counter"
               }
             }
@@ -4369,7 +4369,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Counter_$7183_storage",
+              "typeIdentifier": "t_struct$_Counter_$7179_storage",
               "typeString": "struct Counters.Counter"
             },
             "typeName": {
@@ -4377,10 +4377,10 @@
               "id": 839,
               "name": "Counters.Counter",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7183,
+              "referencedDeclaration": 7179,
               "src": "610:16:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$7183_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$7179_storage_ptr",
                 "typeString": "struct Counters.Counter"
               }
             },
@@ -4399,7 +4399,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ITreasury_$2329",
+              "typeIdentifier": "t_contract$_ITreasury_$2325",
               "typeString": "contract ITreasury"
             },
             "typeName": {
@@ -4407,10 +4407,10 @@
               "id": 841,
               "name": "ITreasury",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2329,
+              "referencedDeclaration": 2325,
               "src": "657:9:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ITreasury_$2329",
+                "typeIdentifier": "t_contract$_ITreasury_$2325",
                 "typeString": "contract ITreasury"
               }
             },
@@ -4429,7 +4429,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+              "typeIdentifier": "t_contract$_IPriceProducer_$2269",
               "typeString": "contract IPriceProducer"
             },
             "typeName": {
@@ -4437,10 +4437,10 @@
               "id": 843,
               "name": "IPriceProducer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2273,
+              "referencedDeclaration": 2269,
               "src": "690:14:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                 "typeString": "contract IPriceProducer"
               }
             },
@@ -4460,7 +4460,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
               "typeString": "mapping(uint256 => struct IPolicy.PolicyData)"
             },
             "typeName": {
@@ -4478,7 +4478,7 @@
               "nodeType": "Mapping",
               "src": "733:30:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                 "typeString": "mapping(uint256 => struct IPolicy.PolicyData)"
               },
               "valueType": {
@@ -4486,10 +4486,10 @@
                 "id": 846,
                 "name": "PolicyData",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 2230,
+                "referencedDeclaration": 2226,
                 "src": "752:10:3",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                  "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                   "typeString": "struct IPolicy.PolicyData"
                 }
               }
@@ -4567,7 +4567,7 @@
                       "referencedDeclaration": 842,
                       "src": "968:9:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITreasury_$2329",
+                        "typeIdentifier": "t_contract$_ITreasury_$2325",
                         "typeString": "contract ITreasury"
                       }
                     },
@@ -4582,13 +4582,13 @@
                       "referencedDeclaration": 854,
                       "src": "980:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITreasury_$2329",
+                        "typeIdentifier": "t_contract$_ITreasury_$2325",
                         "typeString": "contract ITreasury"
                       }
                     },
                     "src": "968:20:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITreasury_$2329",
+                      "typeIdentifier": "t_contract$_ITreasury_$2325",
                       "typeString": "contract ITreasury"
                     }
                   },
@@ -4613,7 +4613,7 @@
                       "referencedDeclaration": 844,
                       "src": "998:13:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                        "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                         "typeString": "contract IPriceProducer"
                       }
                     },
@@ -4628,13 +4628,13 @@
                       "referencedDeclaration": 856,
                       "src": "1014:12:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                        "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                         "typeString": "contract IPriceProducer"
                       }
                     },
                     "src": "998:28:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                      "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                       "typeString": "contract IPriceProducer"
                     }
                   },
@@ -4695,10 +4695,10 @@
                   "name": "ERC721",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 6786,
+                  "referencedDeclaration": 6782,
                   "src": "928:6:3",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ERC721_$6786_$",
+                    "typeIdentifier": "t_type$_t_contract$_ERC721_$6782_$",
                     "typeString": "type(contract ERC721)"
                   }
                 },
@@ -4725,7 +4725,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITreasury_$2329",
+                    "typeIdentifier": "t_contract$_ITreasury_$2325",
                     "typeString": "contract ITreasury"
                   },
                   "typeName": {
@@ -4733,10 +4733,10 @@
                     "id": 853,
                     "name": "ITreasury",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2329,
+                    "referencedDeclaration": 2325,
                     "src": "856:9:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITreasury_$2329",
+                      "typeIdentifier": "t_contract$_ITreasury_$2325",
                       "typeString": "contract ITreasury"
                     }
                   },
@@ -4755,7 +4755,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                    "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                     "typeString": "contract IPriceProducer"
                   },
                   "typeName": {
@@ -4763,10 +4763,10 @@
                     "id": 855,
                     "name": "IPriceProducer",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2273,
+                    "referencedDeclaration": 2269,
                     "src": "876:14:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                      "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                       "typeString": "contract IPriceProducer"
                     }
                   },
@@ -4790,7 +4790,7 @@
           },
           {
             "baseFunctions": [
-              2239
+              2235
             ],
             "body": {
               "id": 914,
@@ -4834,7 +4834,7 @@
                           "referencedDeclaration": 840,
                           "src": "1350:15:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Counter_$7183_storage",
+                            "typeIdentifier": "t_struct$_Counter_$7179_storage",
                             "typeString": "struct Counters.Counter storage ref"
                           }
                         },
@@ -4845,10 +4845,10 @@
                         "lValueRequested": false,
                         "memberName": "current",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7194,
+                        "referencedDeclaration": 7190,
                         "src": "1350:23:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$7183_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$7183_storage_ptr_$",
+                          "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$7179_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$7179_storage_ptr_$",
                           "typeString": "function (struct Counters.Counter storage pointer) view returns (uint256)"
                         }
                       },
@@ -4923,7 +4923,7 @@
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6522,
+                      "referencedDeclaration": 6518,
                       "src": "1385:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -4964,7 +4964,7 @@
                         "referencedDeclaration": 840,
                         "src": "1413:15:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Counter_$7183_storage",
+                          "typeIdentifier": "t_struct$_Counter_$7179_storage",
                           "typeString": "struct Counters.Counter storage ref"
                         }
                       },
@@ -4975,10 +4975,10 @@
                       "lValueRequested": false,
                       "memberName": "increment",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7206,
+                      "referencedDeclaration": 7202,
                       "src": "1413:25:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$7183_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$7183_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$7179_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$7179_storage_ptr_$",
                         "typeString": "function (struct Counters.Counter storage pointer)"
                       }
                     },
@@ -5020,7 +5020,7 @@
                         "referencedDeclaration": 876,
                         "src": "1450:4:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_memory_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_memory_ptr",
                           "typeString": "struct IPolicy.PolicyData memory"
                         }
                       },
@@ -5031,7 +5031,7 @@
                       "lValueRequested": true,
                       "memberName": "policyId",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2219,
+                      "referencedDeclaration": 2215,
                       "src": "1450:13:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5082,7 +5082,7 @@
                         "referencedDeclaration": 848,
                         "src": "1483:8:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                           "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                         }
                       },
@@ -5107,7 +5107,7 @@
                       "nodeType": "IndexAccess",
                       "src": "1483:17:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                         "typeString": "struct IPolicy.PolicyData storage ref"
                       }
                     },
@@ -5122,13 +5122,13 @@
                       "referencedDeclaration": 876,
                       "src": "1503:4:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_memory_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_memory_ptr",
                         "typeString": "struct IPolicy.PolicyData memory"
                       }
                     },
                     "src": "1483:24:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -5172,7 +5172,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 4685,
+                  "referencedDeclaration": 4681,
                   "src": "1135:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -5236,7 +5236,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_PolicyData_$2230_memory_ptr",
+                    "typeIdentifier": "t_struct$_PolicyData_$2226_memory_ptr",
                     "typeString": "struct IPolicy.PolicyData"
                   },
                   "typeName": {
@@ -5244,10 +5244,10 @@
                     "id": 875,
                     "name": "PolicyData",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2230,
+                    "referencedDeclaration": 2226,
                     "src": "1071:10:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                       "typeString": "struct IPolicy.PolicyData"
                     }
                   },
@@ -5321,7 +5321,7 @@
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                         "typeString": "struct IPolicy.PolicyData"
                       },
                       "typeName": {
@@ -5329,10 +5329,10 @@
                         "id": 920,
                         "name": "PolicyData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2230,
+                        "referencedDeclaration": 2226,
                         "src": "1594:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData"
                         }
                       },
@@ -5352,7 +5352,7 @@
                       "referencedDeclaration": 848,
                       "src": "1622:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                         "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                       }
                     },
@@ -5377,7 +5377,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1622:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -5399,7 +5399,7 @@
                           "referencedDeclaration": 921,
                           "src": "1658:6:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                            "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                             "typeString": "struct IPolicy.PolicyData storage pointer"
                           }
                         },
@@ -5410,7 +5410,7 @@
                         "lValueRequested": false,
                         "memberName": "active",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2229,
+                        "referencedDeclaration": 2225,
                         "src": "1658:13:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -5503,7 +5503,7 @@
                         "referencedDeclaration": 921,
                         "src": "1715:6:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData storage pointer"
                         }
                       },
@@ -5514,7 +5514,7 @@
                       "lValueRequested": false,
                       "memberName": "end",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2223,
+                      "referencedDeclaration": 2219,
                       "src": "1715:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5612,7 +5612,7 @@
                                 "referencedDeclaration": 921,
                                 "src": "1858:6:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                                  "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                                   "typeString": "struct IPolicy.PolicyData storage pointer"
                                 }
                               },
@@ -5623,7 +5623,7 @@
                               "lValueRequested": false,
                               "memberName": "externalCode",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2225,
+                              "referencedDeclaration": 2221,
                               "src": "1858:19:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_storage",
@@ -5647,7 +5647,7 @@
                               "referencedDeclaration": 844,
                               "src": "1831:13:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                                 "typeString": "contract IPriceProducer"
                               }
                             },
@@ -5658,7 +5658,7 @@
                             "lValueRequested": false,
                             "memberName": "requestPrice",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2272,
+                            "referencedDeclaration": 2268,
                             "src": "1831:26:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_bytes32_$",
@@ -5884,7 +5884,7 @@
           },
           {
             "baseFunctions": [
-              2261
+              2257
             ],
             "body": {
               "id": 1030,
@@ -5949,7 +5949,7 @@
                               "referencedDeclaration": 844,
                               "src": "2095:13:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                                 "typeString": "contract IPriceProducer"
                               }
                             }
@@ -5957,7 +5957,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IPriceProducer_$2273",
+                                "typeIdentifier": "t_contract$_IPriceProducer_$2269",
                                 "typeString": "contract IPriceProducer"
                               }
                             ],
@@ -6162,7 +6162,7 @@
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                         "typeString": "struct IPolicy.PolicyData"
                       },
                       "typeName": {
@@ -6170,10 +6170,10 @@
                         "id": 984,
                         "name": "PolicyData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2230,
+                        "referencedDeclaration": 2226,
                         "src": "2193:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData"
                         }
                       },
@@ -6193,7 +6193,7 @@
                       "referencedDeclaration": 848,
                       "src": "2221:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                         "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                       }
                     },
@@ -6218,7 +6218,7 @@
                     "nodeType": "IndexAccess",
                     "src": "2221:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -6289,7 +6289,7 @@
                       "name": "ownerOf",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6003,
+                      "referencedDeclaration": 5999,
                       "src": "2266:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_address_$",
@@ -6337,7 +6337,7 @@
                         "referencedDeclaration": 985,
                         "src": "2297:6:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData storage pointer"
                         }
                       },
@@ -6348,7 +6348,7 @@
                       "lValueRequested": false,
                       "memberName": "active",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2229,
+                      "referencedDeclaration": 2225,
                       "src": "2297:13:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -6394,7 +6394,7 @@
                           "referencedDeclaration": 985,
                           "src": "2329:6:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                            "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                             "typeString": "struct IPolicy.PolicyData storage pointer"
                           }
                         },
@@ -6405,7 +6405,7 @@
                         "lValueRequested": false,
                         "memberName": "strikePrice",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2227,
+                        "referencedDeclaration": 2223,
                         "src": "2329:18:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -6548,7 +6548,7 @@
                                 "referencedDeclaration": 985,
                                 "src": "2389:6:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                                  "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                                   "typeString": "struct IPolicy.PolicyData storage pointer"
                                 }
                               },
@@ -6559,7 +6559,7 @@
                               "lValueRequested": false,
                               "memberName": "coverAmount",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2221,
+                              "referencedDeclaration": 2217,
                               "src": "2389:18:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -6600,7 +6600,7 @@
                               "referencedDeclaration": 842,
                               "src": "2363:9:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ITreasury_$2329",
+                                "typeIdentifier": "t_contract$_ITreasury_$2325",
                                 "typeString": "contract ITreasury"
                               }
                             },
@@ -6611,7 +6611,7 @@
                             "lValueRequested": false,
                             "memberName": "payoutEarmarked",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2311,
+                            "referencedDeclaration": 2307,
                             "src": "2363:25:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -6903,7 +6903,7 @@
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                         "typeString": "struct IPolicy.PolicyData"
                       },
                       "typeName": {
@@ -6911,10 +6911,10 @@
                         "id": 1036,
                         "name": "PolicyData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2230,
+                        "referencedDeclaration": 2226,
                         "src": "2668:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                          "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                           "typeString": "struct IPolicy.PolicyData"
                         }
                       },
@@ -6934,7 +6934,7 @@
                       "referencedDeclaration": 848,
                       "src": "2696:8:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                         "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                       }
                     },
@@ -6959,7 +6959,7 @@
                     "nodeType": "IndexAccess",
                     "src": "2696:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                       "typeString": "struct IPolicy.PolicyData storage ref"
                     }
                   },
@@ -6981,7 +6981,7 @@
                           "referencedDeclaration": 1037,
                           "src": "2747:6:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                            "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                             "typeString": "struct IPolicy.PolicyData storage pointer"
                           }
                         },
@@ -6992,7 +6992,7 @@
                         "lValueRequested": false,
                         "memberName": "coverAmount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2221,
+                        "referencedDeclaration": 2217,
                         "src": "2747:18:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -7016,7 +7016,7 @@
                         "referencedDeclaration": 842,
                         "src": "2724:9:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITreasury_$2329",
+                          "typeIdentifier": "t_contract$_ITreasury_$2325",
                           "typeString": "contract ITreasury"
                         }
                       },
@@ -7027,7 +7027,7 @@
                       "lValueRequested": false,
                       "memberName": "releaseFunds",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2285,
+                      "referencedDeclaration": 2281,
                       "src": "2724:22:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
@@ -7201,7 +7201,7 @@
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6590,
+                      "referencedDeclaration": 6586,
                       "src": "2867:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
@@ -7250,7 +7250,7 @@
                         "referencedDeclaration": 848,
                         "src": "2899:8:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2230_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PolicyData_$2226_storage_$",
                           "typeString": "mapping(uint256 => struct IPolicy.PolicyData storage ref)"
                         }
                       },
@@ -7275,7 +7275,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2899:18:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PolicyData_$2230_storage",
+                        "typeIdentifier": "t_struct$_PolicyData_$2226_storage",
                         "typeString": "struct IPolicy.PolicyData storage ref"
                       }
                     },
@@ -7480,8 +7480,8 @@
         }
       },
       "links": {},
-      "address": "0xc72f8a50fF575d984f0fB2FFB6C06b45eb774D74",
-      "transactionHash": "0x1a6c9fbc7e160f3c7f372cf3868cd325ca188ce640164ee9f0af9bec63e6e086"
+      "address": "0xAae3783692a5E22A80e23c200E05b81C9882d213",
+      "transactionHash": "0x6666ab5d1a17b37d0f3aa8b339d9cac8361818250bdb37baec6ef590af111a8d"
     },
     "1337": {
       "events": {
@@ -7606,8 +7606,8 @@
         }
       },
       "links": {},
-      "address": "0xE6b0D88398505fD695dD5d9d47Cf8CaA1a12ba4f",
-      "transactionHash": "0xe0d77e5cecf1deafa416cf8c037bccf152956b4e15faa28a51e2f2ac8230c419"
+      "address": "0x344283e20Ef3F66b3e194AcF188e14BD6ACbc293",
+      "transactionHash": "0xf484b234a2acd85fceedbaf9c28d03b303f8abb87cbc9d3e8776918552d68cbf"
     },
     "1601123645090": {
       "events": {
@@ -7737,7 +7737,7 @@
     }
   },
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-27T11:32:33.122Z",
+  "updatedAt": "2020-09-27T15:52:52.650Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

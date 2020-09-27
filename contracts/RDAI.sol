@@ -32,7 +32,7 @@ contract RDAI is ERC20Burnable {
         _treasury.deposit(amount, msg.sender);
 
         uint256 shares = 0;
-        if (value == 0 || shares == 0) {
+        if (value == 0) {
             shares = amount;
             value = amount.add(value);
         } else {

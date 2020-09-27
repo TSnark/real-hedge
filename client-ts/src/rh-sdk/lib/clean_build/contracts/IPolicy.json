@@ -70,15 +70,15 @@
     "absolutePath": "/interfaces/IPolicy.sol",
     "exportedSymbols": {
       "IPolicy": [
-        2240
+        2236
       ]
     },
-    "id": 2241,
+    "id": 2237,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2216,
+        "id": 2212,
         "literals": [
           "solidity",
           ">=",
@@ -92,7 +92,7 @@
         "src": "32:31:12"
       },
       {
-        "id": 2217,
+        "id": 2213,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -107,25 +107,25 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2240,
+        "id": 2236,
         "linearizedBaseContracts": [
-          2240
+          2236
         ],
         "name": "IPolicy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "IPolicy.PolicyData",
-            "id": 2230,
+            "id": 2226,
             "members": [
               {
                 "constant": false,
-                "id": 2219,
+                "id": 2215,
                 "mutability": "mutable",
                 "name": "policyId",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "151:16:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -134,7 +134,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2218,
+                  "id": 2214,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "151:7:12",
@@ -148,12 +148,12 @@
               },
               {
                 "constant": false,
-                "id": 2221,
+                "id": 2217,
                 "mutability": "mutable",
                 "name": "coverAmount",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "177:19:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -162,7 +162,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2220,
+                  "id": 2216,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "177:7:12",
@@ -176,12 +176,12 @@
               },
               {
                 "constant": false,
-                "id": 2223,
+                "id": 2219,
                 "mutability": "mutable",
                 "name": "end",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "206:11:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -190,7 +190,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2222,
+                  "id": 2218,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:7:12",
@@ -204,12 +204,12 @@
               },
               {
                 "constant": false,
-                "id": 2225,
+                "id": 2221,
                 "mutability": "mutable",
                 "name": "externalCode",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "227:19:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -218,7 +218,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 2224,
+                  "id": 2220,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "227:6:12",
@@ -232,12 +232,12 @@
               },
               {
                 "constant": false,
-                "id": 2227,
+                "id": 2223,
                 "mutability": "mutable",
                 "name": "strikePrice",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "256:19:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -246,7 +246,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2226,
+                  "id": 2222,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "256:7:12",
@@ -260,12 +260,12 @@
               },
               {
                 "constant": false,
-                "id": 2229,
+                "id": 2225,
                 "mutability": "mutable",
                 "name": "active",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "285:11:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -274,7 +274,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 2228,
+                  "id": 2224,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "285:4:12",
@@ -289,7 +289,7 @@
             ],
             "name": "PolicyData",
             "nodeType": "StructDefinition",
-            "scope": 2240,
+            "scope": 2236,
             "src": "123:180:12",
             "visibility": "public"
           },
@@ -297,7 +297,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "8d501cc8",
-            "id": 2239,
+            "id": 2235,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -305,17 +305,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2235,
+              "id": 2231,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2232,
+                  "id": 2228,
                   "mutability": "mutable",
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2239,
+                  "scope": 2235,
                   "src": "329:10:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -324,7 +324,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2231,
+                    "id": 2227,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:12",
@@ -339,28 +339,28 @@
                 },
                 {
                   "constant": false,
-                  "id": 2234,
+                  "id": 2230,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2239,
+                  "scope": 2235,
                   "src": "341:24:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_PolicyData_$2230_calldata_ptr",
+                    "typeIdentifier": "t_struct$_PolicyData_$2226_calldata_ptr",
                     "typeString": "struct IPolicy.PolicyData"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2233,
+                    "id": 2229,
                     "name": "PolicyData",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2230,
+                    "referencedDeclaration": 2226,
                     "src": "341:10:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                       "typeString": "struct IPolicy.PolicyData"
                     }
                   },
@@ -371,17 +371,17 @@
               "src": "328:38:12"
             },
             "returnParameters": {
-              "id": 2238,
+              "id": 2234,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2237,
+                  "id": 2233,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2239,
+                  "scope": 2235,
                   "src": "401:7:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -390,7 +390,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2236,
+                    "id": 2232,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "401:7:12",
@@ -405,14 +405,14 @@
               ],
               "src": "400:9:12"
             },
-            "scope": 2240,
+            "scope": 2236,
             "src": "309:101:12",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2241,
+        "scope": 2237,
         "src": "99:313:12"
       }
     ],
@@ -422,15 +422,15 @@
     "absolutePath": "/interfaces/IPolicy.sol",
     "exportedSymbols": {
       "IPolicy": [
-        2240
+        2236
       ]
     },
-    "id": 2241,
+    "id": 2237,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2216,
+        "id": 2212,
         "literals": [
           "solidity",
           ">=",
@@ -444,7 +444,7 @@
         "src": "32:31:12"
       },
       {
-        "id": 2217,
+        "id": 2213,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -459,25 +459,25 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2240,
+        "id": 2236,
         "linearizedBaseContracts": [
-          2240
+          2236
         ],
         "name": "IPolicy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "IPolicy.PolicyData",
-            "id": 2230,
+            "id": 2226,
             "members": [
               {
                 "constant": false,
-                "id": 2219,
+                "id": 2215,
                 "mutability": "mutable",
                 "name": "policyId",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "151:16:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -486,7 +486,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2218,
+                  "id": 2214,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "151:7:12",
@@ -500,12 +500,12 @@
               },
               {
                 "constant": false,
-                "id": 2221,
+                "id": 2217,
                 "mutability": "mutable",
                 "name": "coverAmount",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "177:19:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -514,7 +514,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2220,
+                  "id": 2216,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "177:7:12",
@@ -528,12 +528,12 @@
               },
               {
                 "constant": false,
-                "id": 2223,
+                "id": 2219,
                 "mutability": "mutable",
                 "name": "end",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "206:11:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -542,7 +542,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2222,
+                  "id": 2218,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:7:12",
@@ -556,12 +556,12 @@
               },
               {
                 "constant": false,
-                "id": 2225,
+                "id": 2221,
                 "mutability": "mutable",
                 "name": "externalCode",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "227:19:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -570,7 +570,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 2224,
+                  "id": 2220,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "227:6:12",
@@ -584,12 +584,12 @@
               },
               {
                 "constant": false,
-                "id": 2227,
+                "id": 2223,
                 "mutability": "mutable",
                 "name": "strikePrice",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "256:19:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -598,7 +598,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2226,
+                  "id": 2222,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "256:7:12",
@@ -612,12 +612,12 @@
               },
               {
                 "constant": false,
-                "id": 2229,
+                "id": 2225,
                 "mutability": "mutable",
                 "name": "active",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 2230,
+                "scope": 2226,
                 "src": "285:11:12",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -626,7 +626,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 2228,
+                  "id": 2224,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "285:4:12",
@@ -641,7 +641,7 @@
             ],
             "name": "PolicyData",
             "nodeType": "StructDefinition",
-            "scope": 2240,
+            "scope": 2236,
             "src": "123:180:12",
             "visibility": "public"
           },
@@ -649,7 +649,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "8d501cc8",
-            "id": 2239,
+            "id": 2235,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -657,17 +657,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2235,
+              "id": 2231,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2232,
+                  "id": 2228,
                   "mutability": "mutable",
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2239,
+                  "scope": 2235,
                   "src": "329:10:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -676,7 +676,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2231,
+                    "id": 2227,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:12",
@@ -691,28 +691,28 @@
                 },
                 {
                   "constant": false,
-                  "id": 2234,
+                  "id": 2230,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2239,
+                  "scope": 2235,
                   "src": "341:24:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_PolicyData_$2230_calldata_ptr",
+                    "typeIdentifier": "t_struct$_PolicyData_$2226_calldata_ptr",
                     "typeString": "struct IPolicy.PolicyData"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2233,
+                    "id": 2229,
                     "name": "PolicyData",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2230,
+                    "referencedDeclaration": 2226,
                     "src": "341:10:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                      "typeIdentifier": "t_struct$_PolicyData_$2226_storage_ptr",
                       "typeString": "struct IPolicy.PolicyData"
                     }
                   },
@@ -723,17 +723,17 @@
               "src": "328:38:12"
             },
             "returnParameters": {
-              "id": 2238,
+              "id": 2234,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2237,
+                  "id": 2233,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2239,
+                  "scope": 2235,
                   "src": "401:7:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -742,7 +742,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2236,
+                    "id": 2232,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "401:7:12",
@@ -757,14 +757,14 @@
               ],
               "src": "400:9:12"
             },
-            "scope": 2240,
+            "scope": 2236,
             "src": "309:101:12",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2241,
+        "scope": 2237,
         "src": "99:313:12"
       }
     ],
@@ -776,7 +776,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-27T11:22:28.067Z",
+  "updatedAt": "2020-09-27T15:38:43.536Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
