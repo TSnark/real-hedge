@@ -125,7 +125,7 @@ describe("Underwriter", function () {
     const premium = await contract.calculatePremium(policyRequest);
     await mockDai.approve(contract.address, premium);
     const priceRequestId = utils.formatBytes32String("hello");
-    await mockTreasury.mock.depositPremium.returns();
+    await mockTreasury.mock.deposit.returns();
     await mockTreasury.mock.earmarkFunds.returns();
     await mockPriceProducer.mock.requestPrice.returns(priceRequestId);
     await contract.buyPolicy(policyRequest);
@@ -140,7 +140,7 @@ describe("Underwriter", function () {
     await mockDai.approve(contract.address, premium);
     const priceRequestId = utils.formatBytes32String("hello");
     const policyRequest = createPolicyRequest();
-    await mockTreasury.mock.depositPremium.returns();
+    await mockTreasury.mock.deposit.returns();
     await mockTreasury.mock.earmarkFunds.returns();
     await mockPriceProducer.mock.requestPrice.returns(priceRequestId);
 
@@ -156,7 +156,7 @@ describe("Underwriter", function () {
     const policyRequest = createPolicyRequest();
     const policyId = 123;
 
-    await mockTreasury.mock.depositPremium.returns();
+    await mockTreasury.mock.deposit.returns();
     await mockTreasury.mock.earmarkFunds.returns();
     await mockPolicy.mock.mintPolicy.returns(policyId);
     await mockPriceProducer.mock.requestPrice.returns(priceRequestId);
@@ -191,7 +191,7 @@ describe("Underwriter", function () {
     const minumumPrice = await contract.minimumPrice();
     const priceRequestId = utils.formatBytes32String("hello");
     await mockTreasury.mock.earmarkFunds.returns();
-    await mockTreasury.mock.depositPremium.returns();
+    await mockTreasury.mock.deposit.returns();
     await mockTreasury.mock.payoutEarmarked.returns();
 
     await mockPriceProducer.mock.requestPrice.returns(priceRequestId);
@@ -217,7 +217,7 @@ describe("Underwriter", function () {
     const minumumPrice = await contract.minimumPrice();
     const priceRequestId = utils.formatBytes32String("hello");
     await mockTreasury.mock.earmarkFunds.returns();
-    await mockTreasury.mock.depositPremium.returns();
+    await mockTreasury.mock.deposit.returns();
     await mockTreasury.mock.payoutEarmarked.returns();
 
     await mockPriceProducer.mock.requestPrice.returns(priceRequestId);

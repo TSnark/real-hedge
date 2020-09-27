@@ -109,13 +109,17 @@ describe("Policy", function () {
       .value;
 
     await contract.claim(tokenId);
-    await callRawMock(
-      mockPriceProducer,
-      contract,
-      "onPriceResponse(bytes32,uint256)",
-      priceRequestId,
-      policyData.strikePrice - 1
-    );
+    await expect(
+      callRawMock(
+        mockPriceProducer,
+        contract,
+        "onPriceResponse(bytes32,uint256)",
+        priceRequestId,
+        policyData.strikePrice - 1
+      )
+    )
+      .to.emit(contract, "PolicyClaimed")
+      .withArgs(userWallet.address, tokenId, true);
 
     expect("payoutEarmarked").to.be.calledOnContractWith(mockTreasury, [
       policyData.coverAmount,
@@ -135,13 +139,17 @@ describe("Policy", function () {
       .value;
 
     await contract.claim(tokenId);
-    await callRawMock(
-      mockPriceProducer,
-      contract,
-      "onPriceResponse(bytes32,uint256)",
-      priceRequestId,
-      policyData.strikePrice + 1
-    );
+    await expect(
+      callRawMock(
+        mockPriceProducer,
+        contract,
+        "onPriceResponse(bytes32,uint256)",
+        priceRequestId,
+        policyData.strikePrice + 1
+      )
+    )
+      .to.emit(contract, "PolicyClaimed")
+      .withArgs(userWallet.address, tokenId, false);
 
     expect(await contract.balanceOf(userWallet.address)).to.equal(1);
   });
@@ -178,5 +186,6 @@ function createPolicyData(expiry = 10000) {
     externalCode: "A12",
     strikePrice: 100000,
     active: true,
+    policyId: 999,
   };
 }

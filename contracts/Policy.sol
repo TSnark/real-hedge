@@ -13,6 +13,8 @@ import "./interfaces/IPolicy.sol";
 contract Policy is Ownable, ERC721, IPriceConsumer, IPolicy {
     using Counters for Counters.Counter;
 
+    event PolicyClaimed(address indexed holder, uint256 policyId, bool succees);
+
     Counters.Counter private _tokenIdTracker;
 
     ITreasury private _treasury;
@@ -61,12 +63,15 @@ contract Policy is Ownable, ERC721, IPriceConsumer, IPolicy {
         override
     {
         require(msg.sender == address(_priceFetcher), "Access denied");
-
         uint256 policyId = _pendingRequests[requestId];
         PolicyData storage policy = policies[policyId];
+        address holder = ownerOf(policyId);
         if (policy.active && currentPrice < policy.strikePrice) {
-            _treasury.payoutEarmarked(policy.coverAmount, ownerOf(policyId));
+            _treasury.payoutEarmarked(policy.coverAmount, holder);
             _burnPolicy(policyId);
+            emit PolicyClaimed(holder, policyId, true);
+        } else {
+            emit PolicyClaimed(holder, policyId, false);
         }
     }
 
