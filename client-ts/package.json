@@ -1,5 +1,6 @@
 {
   "name": "real-hedge-www",
+  "homepage": "https://TSnark.github.io/real-hedge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

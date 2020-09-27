@@ -1,6 +1,8 @@
 {
   "name": "real-hedge",
   "version": "0.0.1",
+  "homepage": "https://TSnark.github.io/real-hedge",
+  "repository": "git@github.com:TSnark/real-hedge.git",
   "author": "TSnark <753334917@protonmail.com>",
   "license": "MIT",
   "dependencies": {
