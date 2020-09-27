@@ -34,6 +34,7 @@ const HedgeCard: React.FC<HedgeCardProps> = ({onChange, value}) => {
 
   const handlePostCodeChange = useCallback(
     (location?: string) => {
+      location = location ? location.toLowerCase().replaceAll(" ", "-") : "";
       onChange({...value, location});
     },
     [onChange, value]
