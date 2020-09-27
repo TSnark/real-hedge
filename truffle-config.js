@@ -20,6 +20,18 @@ module.exports = {
       network_id: 1337,
       port: 8545,
     },
+    teams: {
+      provider: function () {
+        return new HDWalletProvider(
+          keys.teamsMnemonic,
+          keys.teamsUrl,
+          0,
+          10,
+          false
+        );
+      },
+      network_id: 1601123645090,
+    },
     kovan: {
       provider: () =>
         new HDWalletProvider(

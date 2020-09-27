@@ -18,7 +18,7 @@ module.exports = async function (deployer, network) {
   let daiAddress;
   let priceFetcher;
   let treasury;
-  if (network === "local") {
+  if (isLocal(network)) {
     let mockDai = await deployer.deploy(MockDai);
     daiAddress = mockDai.address;
     const controllablePriceFetcher = await deployer.deploy(
@@ -73,3 +73,6 @@ module.exports = async function (deployer, network) {
 const link = (n) => {
   return new web3.utils.BN(web3.utils.toWei(n.toString(), "ether"));
 };
+function isLocal(network) {
+  return network === "local" || network === "teams";
+}

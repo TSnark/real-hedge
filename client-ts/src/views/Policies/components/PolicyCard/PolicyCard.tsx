@@ -29,7 +29,7 @@ interface PolicyProps {
   onClaim: (policyId: number) => void;
 }
 const PolicyCard: React.FC<PolicyProps> = ({policy, isClaiming, onClaim}) => {
-  const {data, loading, error} = useLocationPrice(policy.externalCode);
+  const {price, loading, error} = useLocationPrice(policy.externalCode);
   const {status} = useWallet();
 
   const LocationPrice = useMemo(() => {
@@ -39,11 +39,11 @@ const PolicyCard: React.FC<PolicyProps> = ({policy, isClaiming, onClaim}) => {
           <Label text="Current Price" />
         </Box>
         <Box alignItems="center" row>
-          <Value value={!loading || !error ? "£" + data : "--"} />
+          <Value value={!loading || !error ? "£" + price : "--"} />
         </Box>
       </>
     );
-  }, [data, loading, error]);
+  }, [price, loading, error]);
 
   const ClaimButton = useMemo(() => {
     if (status !== "connected") {
@@ -53,9 +53,14 @@ const PolicyCard: React.FC<PolicyProps> = ({policy, isClaiming, onClaim}) => {
       return <Button full disabled text="Claiming ..." />;
     }
     return (
-      <Button full onClick={() => onClaim(policy.policyId)} text="Claim" />
+      <Button
+        full
+        disabled={price < policy.strikePrice}
+        onClick={() => onClaim(policy.policyId)}
+        text="Claim"
+      />
     );
-  }, [status, isClaiming, onClaim, policy.policyId]);
+  }, [status, isClaiming, onClaim, policy.policyId, price, policy.strikePrice]);
 
   const TransferButton = useMemo(() => {
     return <Button disabled full text="Transfer" variant="secondary" />;

@@ -18,7 +18,7 @@ const HedgeCard: React.FC<HedgeCardProps> = ({onChange, value}) => {
   );
 
   const handleSelectMaxAmount = useCallback(() => {
-    onChange({...value, amount: 50000});
+    onChange({...value, amount: 100});
   }, [onChange, value]);
 
   const handleDurationChange = useCallback(
@@ -45,7 +45,7 @@ const HedgeCard: React.FC<HedgeCardProps> = ({onChange, value}) => {
         <Box alignItems="center" column>
           <Spacer size={"sm"} />
           <NumericInput
-            max={50000}
+            max={100}
             value={value.amount}
             onSelectMax={handleSelectMaxAmount}
             onChange={handleAmountChange}

@@ -11,12 +11,12 @@ const useLocationPrice = (location: string) => {
   );
   if (!loading && !error) {
     return {
-      data: get(data, "result.primaryTopic.averagePrice"),
+      price: get(data, "result.primaryTopic.averagePrice"),
       loading,
       error,
     };
   }
-  return {data, loading, error};
+  return {price: data, loading, error};
 };
 
 export default useLocationPrice;

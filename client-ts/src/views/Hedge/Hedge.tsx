@@ -33,7 +33,7 @@ const Hedge: React.FC = () => {
     <Page>
       <PageHeader
         icon="🛡️"
-        subtitle="Buy a hedge and protect your property value"
+        subtitle="Buy a policy and protect your property value"
         title="Hedge"
       />
       <Container>
