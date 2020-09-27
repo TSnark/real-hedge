@@ -20,7 +20,7 @@ const Provider: React.FC = ({children}) => {
         await getBalance(provider, dai, userAddress),
       ]);
       setDaiBalance(
-        new BigNumber(balances[3]).dividedBy(new BigNumber(10).pow(18))
+        new BigNumber(balances[0]).dividedBy(new BigNumber(10).pow(18))
       );
     },
     [setDaiBalance]
