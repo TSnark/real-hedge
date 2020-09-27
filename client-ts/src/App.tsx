@@ -45,6 +45,9 @@ const App: React.FC = () => {
           <Route exact path="/policies">
             <Policies />
           </Route>
+          <Route>
+            <Hedge />
+          </Route>
         </Switch>
       </Providers>
     </Router>
