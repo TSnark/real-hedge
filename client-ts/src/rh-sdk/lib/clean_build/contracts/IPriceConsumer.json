@@ -32,15 +32,15 @@
     "absolutePath": "/interfaces/IPriceConsumer.sol",
     "exportedSymbols": {
       "IPriceConsumer": [
-        2258
+        2269
       ]
     },
-    "id": 2259,
+    "id": 2270,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2249,
+        "id": 2260,
         "literals": [
           "solidity",
           ">=",
@@ -54,7 +54,7 @@
         "src": "32:31:14"
       },
       {
-        "id": 2250,
+        "id": 2261,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -69,9 +69,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2258,
+        "id": 2269,
         "linearizedBaseContracts": [
-          2258
+          2269
         ],
         "name": "IPriceConsumer",
         "nodeType": "ContractDefinition",
@@ -80,7 +80,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "c1c1f85a",
-            "id": 2257,
+            "id": 2268,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -88,17 +88,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2255,
+              "id": 2266,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2252,
+                  "id": 2263,
                   "mutability": "mutable",
                   "name": "requestId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2257,
+                  "scope": 2268,
                   "src": "155:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -107,7 +107,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2251,
+                    "id": 2262,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "155:7:14",
@@ -121,12 +121,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2254,
+                  "id": 2265,
                   "mutability": "mutable",
                   "name": "currentPrice",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2257,
+                  "scope": 2268,
                   "src": "174:20:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -135,7 +135,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2253,
+                    "id": 2264,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "174:7:14",
@@ -151,19 +151,19 @@
               "src": "154:41:14"
             },
             "returnParameters": {
-              "id": 2256,
+              "id": 2267,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "204:0:14"
             },
-            "scope": 2258,
+            "scope": 2269,
             "src": "130:75:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2259,
+        "scope": 2270,
         "src": "99:108:14"
       }
     ],
@@ -173,15 +173,15 @@
     "absolutePath": "/interfaces/IPriceConsumer.sol",
     "exportedSymbols": {
       "IPriceConsumer": [
-        2258
+        2269
       ]
     },
-    "id": 2259,
+    "id": 2270,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2249,
+        "id": 2260,
         "literals": [
           "solidity",
           ">=",
@@ -195,7 +195,7 @@
         "src": "32:31:14"
       },
       {
-        "id": 2250,
+        "id": 2261,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -210,9 +210,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2258,
+        "id": 2269,
         "linearizedBaseContracts": [
-          2258
+          2269
         ],
         "name": "IPriceConsumer",
         "nodeType": "ContractDefinition",
@@ -221,7 +221,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "c1c1f85a",
-            "id": 2257,
+            "id": 2268,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -229,17 +229,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2255,
+              "id": 2266,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2252,
+                  "id": 2263,
                   "mutability": "mutable",
                   "name": "requestId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2257,
+                  "scope": 2268,
                   "src": "155:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -248,7 +248,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2251,
+                    "id": 2262,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "155:7:14",
@@ -262,12 +262,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2254,
+                  "id": 2265,
                   "mutability": "mutable",
                   "name": "currentPrice",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2257,
+                  "scope": 2268,
                   "src": "174:20:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -276,7 +276,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2253,
+                    "id": 2264,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "174:7:14",
@@ -292,19 +292,19 @@
               "src": "154:41:14"
             },
             "returnParameters": {
-              "id": 2256,
+              "id": 2267,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "204:0:14"
             },
-            "scope": 2258,
+            "scope": 2269,
             "src": "130:75:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2259,
+        "scope": 2270,
         "src": "99:108:14"
       }
     ],
@@ -316,7 +316,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-27T15:38:43.538Z",
+  "updatedAt": "2020-09-27T17:44:13.981Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

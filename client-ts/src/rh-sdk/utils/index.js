@@ -7,7 +7,7 @@ BigNumber.config({
 });
 
 const GAS_LIMIT = {
-  DEFAULT: 2000000,
+  DEFAULT: 5000000,
 };
 
 export const buyPolicy = async (
@@ -146,7 +146,7 @@ export const withdraw = async (rh, amount, account, onTxHash) => {
   const poolContract = rh.contracts.rDai;
   return poolContract.methods
     .withdraw(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
-    .send({from: account, gas: 200000}, async (error, txHash) => {
+    .send({from: account, gas: GAS_LIMIT.DEFAULT}, async (error, txHash) => {
       if (error) {
         onTxHash && onTxHash("");
         console.log("Withdrawal error", error);

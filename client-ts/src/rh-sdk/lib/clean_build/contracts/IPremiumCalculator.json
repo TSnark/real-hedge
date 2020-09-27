@@ -33,15 +33,15 @@
     "absolutePath": "/interfaces/IPremiumCalculator.sol",
     "exportedSymbols": {
       "IPremiumCalculator": [
-        2247
+        2258
       ]
     },
-    "id": 2248,
+    "id": 2259,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2238,
+        "id": 2249,
         "literals": [
           "solidity",
           ">=",
@@ -55,7 +55,7 @@
         "src": "32:31:13"
       },
       {
-        "id": 2239,
+        "id": 2250,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -70,9 +70,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2247,
+        "id": 2258,
         "linearizedBaseContracts": [
-          2247
+          2258
         ],
         "name": "IPremiumCalculator",
         "nodeType": "ContractDefinition",
@@ -81,7 +81,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "b9b837f0",
-            "id": 2246,
+            "id": 2257,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -89,17 +89,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2242,
+              "id": 2253,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2241,
+                  "id": 2252,
                   "mutability": "mutable",
                   "name": "_code",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2246,
+                  "scope": 2257,
                   "src": "160:19:13",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -108,7 +108,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2240,
+                    "id": 2251,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "160:6:13",
@@ -124,17 +124,17 @@
               "src": "159:21:13"
             },
             "returnParameters": {
-              "id": 2245,
+              "id": 2256,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2244,
+                  "id": 2255,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2246,
+                  "scope": 2257,
                   "src": "199:7:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -143,7 +143,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2243,
+                    "id": 2254,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "199:7:13",
@@ -158,14 +158,14 @@
               ],
               "src": "198:9:13"
             },
-            "scope": 2247,
+            "scope": 2258,
             "src": "134:74:13",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2248,
+        "scope": 2259,
         "src": "99:111:13"
       }
     ],
@@ -175,15 +175,15 @@
     "absolutePath": "/interfaces/IPremiumCalculator.sol",
     "exportedSymbols": {
       "IPremiumCalculator": [
-        2247
+        2258
       ]
     },
-    "id": 2248,
+    "id": 2259,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2238,
+        "id": 2249,
         "literals": [
           "solidity",
           ">=",
@@ -197,7 +197,7 @@
         "src": "32:31:13"
       },
       {
-        "id": 2239,
+        "id": 2250,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -212,9 +212,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2247,
+        "id": 2258,
         "linearizedBaseContracts": [
-          2247
+          2258
         ],
         "name": "IPremiumCalculator",
         "nodeType": "ContractDefinition",
@@ -223,7 +223,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "b9b837f0",
-            "id": 2246,
+            "id": 2257,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -231,17 +231,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2242,
+              "id": 2253,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2241,
+                  "id": 2252,
                   "mutability": "mutable",
                   "name": "_code",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2246,
+                  "scope": 2257,
                   "src": "160:19:13",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -250,7 +250,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2240,
+                    "id": 2251,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "160:6:13",
@@ -266,17 +266,17 @@
               "src": "159:21:13"
             },
             "returnParameters": {
-              "id": 2245,
+              "id": 2256,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2244,
+                  "id": 2255,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2246,
+                  "scope": 2257,
                   "src": "199:7:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -285,7 +285,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2243,
+                    "id": 2254,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "199:7:13",
@@ -300,14 +300,14 @@
               ],
               "src": "198:9:13"
             },
-            "scope": 2247,
+            "scope": 2258,
             "src": "134:74:13",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2248,
+        "scope": 2259,
         "src": "99:111:13"
       }
     ],
@@ -319,7 +319,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-27T15:38:43.537Z",
+  "updatedAt": "2020-09-27T17:44:13.980Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

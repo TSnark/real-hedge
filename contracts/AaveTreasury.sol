@@ -31,9 +31,11 @@ contract AaveTreasury is Treasury {
     }
 
     function deposit(uint256 amount, address payee) external override {
-        uint256 reserves = amount;
+        _dai.safeTransferFrom(payee, address(this), amount); //This is not optimal
         if (_shouldInvest(amount)) {
-            reserves = amount.mul(_TARGET_RESERVES_IN_BPS).div(_100_PCT_IN_BPS);
+            uint256 reserves = amount.mul(_TARGET_RESERVES_IN_BPS).div(
+                _100_PCT_IN_BPS
+            );
             uint256 investment = amount.sub(reserves);
             _dai.safeApprove(
                 _aaveAddressProvider.getLendingPoolCore(),
@@ -45,7 +47,6 @@ contract AaveTreasury is Treasury {
                 0
             );
         }
-        _dai.safeTransferFrom(payee, address(this), reserves);
     }
 
     function _shouldInvest(uint256 amount) private view returns (bool) {
@@ -71,7 +72,11 @@ contract AaveTreasury is Treasury {
     function _payout(uint256 amount, address payee) internal override {
         require(this.isCapitalAvailable(amount), "Insufficient Funds");
         if (reservesBalance() < amount) {
-            _aaveToken.redeem(amount);
+            uint256 toBeRedeemed = amount;
+            if (amount > investmentsBalance()) {
+                toBeRedeemed = investmentsBalance();
+            }
+            _aaveToken.redeem(toBeRedeemed);
         }
         _dai.safeTransfer(payee, amount);
     }
