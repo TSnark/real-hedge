@@ -55,4 +55,4 @@ At the moment the protocol covers only the U.K. and it uses primary data from th
 
 [Yam](https://yam.finance) - For heavily inspiring our frontend
 
-[yEarn](https://yearn.finance/ - For inspiring the rDAI token
+[yEarn](https://yearn.finance/) - For inspiring the rDAI token
