@@ -1,0 +1,790 @@
+{
+  "contractName": "IPolicy",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "policyId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "coverAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "end",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "externalCode",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "strikePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "active",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IPolicy.PolicyData",
+          "name": "data",
+          "type": "tuple"
+        }
+      ],
+      "name": "mintPolicy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"policyId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"coverAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"end\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"externalCode\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"strikePrice\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"active\",\"type\":\"bool\"}],\"internalType\":\"struct IPolicy.PolicyData\",\"name\":\"data\",\"type\":\"tuple\"}],\"name\":\"mintPolicy\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/interfaces/IPolicy.sol\":\"IPolicy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/interfaces/IPolicy.sol\":{\"keccak256\":\"0x133317c8619572a94baaf5bae606acfd2575597e991915c0cd6aef11b7428d57\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://45c91349959cd5cde906758db7a349a4dc715a8d8c58a2559a0fe7e53c1f5802\",\"dweb:/ipfs/QmUkHcqVB3eFWXtiTmzKZ6fU5s8Z61hhkWrqPdPS7i5ZbP\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.0 <0.7.0;\npragma experimental ABIEncoderV2;\n\ninterface IPolicy {\n    struct PolicyData {\n        uint256 policyId;\n        uint256 coverAmount;\n        uint256 end;\n        string externalCode;\n        uint256 strikePrice;\n        bool active;\n    }\n\n    function mintPolicy(address to, PolicyData calldata data)\n        external\n        returns (uint256);\n}\n",
+  "sourcePath": "/interfaces/IPolicy.sol",
+  "ast": {
+    "absolutePath": "/interfaces/IPolicy.sol",
+    "exportedSymbols": {
+      "IPolicy": [
+        2240
+      ]
+    },
+    "id": 2241,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2216,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:12"
+      },
+      {
+        "id": 2217,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "64:33:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2240,
+        "linearizedBaseContracts": [
+          2240
+        ],
+        "name": "IPolicy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IPolicy.PolicyData",
+            "id": 2230,
+            "members": [
+              {
+                "constant": false,
+                "id": 2219,
+                "mutability": "mutable",
+                "name": "policyId",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "151:16:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2218,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2221,
+                "mutability": "mutable",
+                "name": "coverAmount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "177:19:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2220,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "177:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2223,
+                "mutability": "mutable",
+                "name": "end",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "206:11:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2222,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "206:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2225,
+                "mutability": "mutable",
+                "name": "externalCode",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "227:19:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2224,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "227:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2227,
+                "mutability": "mutable",
+                "name": "strikePrice",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "256:19:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2226,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "256:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2229,
+                "mutability": "mutable",
+                "name": "active",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "285:11:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 2228,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "285:4:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "PolicyData",
+            "nodeType": "StructDefinition",
+            "scope": 2240,
+            "src": "123:180:12",
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "8d501cc8",
+            "id": 2239,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintPolicy",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2232,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2239,
+                  "src": "329:10:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2231,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2234,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2239,
+                  "src": "341:24:12",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_PolicyData_$2230_calldata_ptr",
+                    "typeString": "struct IPolicy.PolicyData"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2233,
+                    "name": "PolicyData",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2230,
+                    "src": "341:10:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                      "typeString": "struct IPolicy.PolicyData"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "328:38:12"
+            },
+            "returnParameters": {
+              "id": 2238,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2237,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2239,
+                  "src": "401:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2236,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "401:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "400:9:12"
+            },
+            "scope": 2240,
+            "src": "309:101:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2241,
+        "src": "99:313:12"
+      }
+    ],
+    "src": "32:381:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/interfaces/IPolicy.sol",
+    "exportedSymbols": {
+      "IPolicy": [
+        2240
+      ]
+    },
+    "id": 2241,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2216,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:12"
+      },
+      {
+        "id": 2217,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "64:33:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2240,
+        "linearizedBaseContracts": [
+          2240
+        ],
+        "name": "IPolicy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IPolicy.PolicyData",
+            "id": 2230,
+            "members": [
+              {
+                "constant": false,
+                "id": 2219,
+                "mutability": "mutable",
+                "name": "policyId",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "151:16:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2218,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2221,
+                "mutability": "mutable",
+                "name": "coverAmount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "177:19:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2220,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "177:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2223,
+                "mutability": "mutable",
+                "name": "end",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "206:11:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2222,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "206:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2225,
+                "mutability": "mutable",
+                "name": "externalCode",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "227:19:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2224,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "227:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2227,
+                "mutability": "mutable",
+                "name": "strikePrice",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "256:19:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2226,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "256:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2229,
+                "mutability": "mutable",
+                "name": "active",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 2230,
+                "src": "285:11:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 2228,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "285:4:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "PolicyData",
+            "nodeType": "StructDefinition",
+            "scope": 2240,
+            "src": "123:180:12",
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "8d501cc8",
+            "id": 2239,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintPolicy",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2232,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2239,
+                  "src": "329:10:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2231,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2234,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2239,
+                  "src": "341:24:12",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_PolicyData_$2230_calldata_ptr",
+                    "typeString": "struct IPolicy.PolicyData"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2233,
+                    "name": "PolicyData",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2230,
+                    "src": "341:10:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PolicyData_$2230_storage_ptr",
+                      "typeString": "struct IPolicy.PolicyData"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "328:38:12"
+            },
+            "returnParameters": {
+              "id": 2238,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2237,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2239,
+                  "src": "401:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2236,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "401:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "400:9:12"
+            },
+            "scope": 2240,
+            "src": "309:101:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2241,
+        "src": "99:313:12"
+      }
+    ],
+    "src": "32:381:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2020-09-27T11:22:28.067Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

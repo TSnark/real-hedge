@@ -1,7 +1,7 @@
 import BigNumber from "bignumber.js/bignumber";
 import PolicyJson from "../clean_build/contracts/Policy.json";
 import RDAIJson from "../clean_build/contracts/RDAI.json";
-import TreasuryJson from "../clean_build/contracts/Treasury.json";
+import TreasuryJson from "../clean_build/contracts/AaveTreasury.json";
 import UnderwriterJson from "../clean_build/contracts/Underwriter.json";
 import {SUBTRACT_GAS_LIMIT} from "./constants.js";
 import * as Types from "./types.js";
